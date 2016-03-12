@@ -1,3 +1,7 @@
+// Verified
+// http://code-festival-2015-final-open.contest.atcoder.jp/tasks/codefestival_2015_final_d
+// http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=RitsCamp16Day3&pid=F
+
 template<class T>
 struct StarrySkyTree {
     using int_type = T;
@@ -32,8 +36,8 @@ struct StarrySkyTree {
     int_type get(int a,int b, int k,int l, int r) {
         if(r<=a || b<=l) return -INF;
         if(a<=l && r<=b) return data[k]+lazy[k];
-        int_type lval = get(a,b,k*2+1,l,(l+r)/2);
-        int_type rval = get(a,b,k*2+2,(l+r)/2,r);
+        auto lval = get(a,b,k*2+1,l,(l+r)/2);
+        auto rval = get(a,b,k*2+2,(l+r)/2,r);
         return max(lval, rval)+lazy[k];
     }
 };
