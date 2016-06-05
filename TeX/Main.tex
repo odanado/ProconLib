@@ -1,0 +1,90 @@
+\documentclass[titlepage, landscape, a4paper, 12pt, twocolumn]{jsarticle}
+
+\usepackage[top=15truemm,bottom=15truemm,left=10truemm,right=10truemm]{geometry}
+
+\usepackage{ascmac,here,txfonts}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{bm}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+
+\definecolor{dkgreen}{rgb}{0,0.5,0}
+\definecolor{purple}{rgb}{0.5,0,0.5}
+\definecolor{comcol}{rgb}{0.8,0.4,0}
+
+\lstset{
+  language={C++},
+  basicstyle={\footnotesize\ttfamily},
+  identifierstyle={\footnotesize},
+  commentstyle={\footnotesize\itshape\color{red}},
+  keywordstyle={\footnotesize\bfseries\color{blue}},
+  ndkeywordstyle={\footnotesize\bfseries\color{comcol}},
+  morekeywords={void, bool, char, int, short, long, double, auto},
+  morekeywords={vector, string, priority\_queue, pair, set, map},
+  morendkeywords={if, else, while, for, do, break, continue, return},
+  morendkeywords={operator, const, struct, class, private, public, typedef},
+  morendkeywords={int_type, INF},
+  morendkeywords={using, namespace},
+  morendkeywords={rep, all},
+  stringstyle={\footnotesize\color{purple}},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0ex,
+  xleftmargin=3ex,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1ex,
+  lineskip=-0.5ex
+}
+
+\begin{document}
+\section{Template}
+\lstinputlisting{../Template.cpp}
+
+\section{Graph}
+\subsection{二部マッチング}
+\lstinputlisting{../Graph/BipartiteMatching.cpp}
+\subsection{ダイクストラ}
+\lstinputlisting{../Graph/Dijkstra.cpp}
+\subsection{最大流}
+\lstinputlisting{../Graph/FordFulkerson.cpp}
+\subsection{最小費用流}
+\lstinputlisting{../Graph/MinimumCostFlow.cpp}
+\subsection{最小共通祖先}
+\lstinputlisting{../Graph/LCA.cpp}
+
+\section{Math}
+\subsection{繰り返し2乗法}
+\lstinputlisting{../Math/ModPow.cpp}
+\subsection{コンビネーション}
+\lstinputlisting{../Math/Combination.cpp}
+
+\section{DataStructure}
+\subsection{Segment Tree}
+\lstinputlisting{../DataStructure/SegTree.cpp}
+\subsection{StarrySky Tree}
+\lstinputlisting{../DataStructure/StarrySkyTree.cpp}
+\subsection{Treap}
+\lstinputlisting{../DataStructure/Treap.cpp}
+\subsection{UnionFind}
+\lstinputlisting{../DataStructure/UnionFind.cpp}
+
+
+\section{String}
+\subsection{ローリングハッシュ}
+\lstinputlisting{../String/RollingHash.cpp}
+
+
+\section{Geometry}
+\subsection{幾何}
+\lstinputlisting{../Geometry/Geometry.cpp}
+
+
+
+%
+%
+\end{document}
