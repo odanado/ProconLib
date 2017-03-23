@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def write_snippet(snippet_file_name, snippet_name, snippet)
-    file = File.open("#{Dir.home}/dotfiles/.vim/snippets/cpp/" + snippet_file_name, 'w')
+    file = File.open("#{Dir.home}/dotfiles/vim/snippets/cpp/" + snippet_file_name, 'w')
     file.write('snippet ' + snippet_name + "\n")
     file.write(snippet)
 end
